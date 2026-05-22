@@ -668,6 +668,11 @@ body {
   aspect-ratio: 4/5;
   background: var(--dark-3);
 }
+.about-img-wrap img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .about-img-placeholder {
   width: 100%; height: 100%;
   background: linear-gradient(135deg, var(--dark-3) 0%, var(--dark-4) 50%, var(--dark-3) 100%);
