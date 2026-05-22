@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ── Meta & SEO ── -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PixelMint — Elevating Brands Digitally. Strategic branding, corporate identity, website design & digital marketing agency in India." />
+  <meta name="keywords" content="branding agency, digital agency, brand identity, logo design, website development, marketing, PixelMint" />
+  <meta property="og:title" content="PixelMint — Elevating Brands Digitally" />
+  <meta property="og:description" content="Strategic branding and digital experiences that help businesses build credibility, visibility, and long-term brand value." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#F5A623" />
+  <title>PixelMint — Elevating Brands Digitally</title>
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ── Bootstrap Icons ── -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- ── Fonts (preconnect) ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     PRELOADER
+════════════════════════════════════════ -->
+<div id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-logo"><img class="preloader-logo-img" src="images/Pixelmint Logo.png" alt="PixelMint Logo"></div>
+  <div class="preloader-bar-track">
+    <div class="preloader-bar"></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CUSTOM CURSOR
+════════════════════════════════════════ -->
+<div id="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<header id="navbar" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="PixelMint — home">
+        <!-- Using uploaded PNG logo; falls back to text if image unavailable -->
+        <img
+          src="images/Pixelmint Logo.png"alt="PixelMint logo"/>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about"         data-section="about">About</a></li>
+        <li><a href="#services"      data-section="services">Services</a></li>
+        <li><a href="#deliverables"  data-section="deliverables">Deliverables</a></li>
+        <li><a href="#testimonials"  data-section="testimonials">Reviews</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="#contact" class="btn btn-primary nav-cta">Let's Talk →</a>
+
+      <!-- Mobile Hamburger -->
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="#about"        data-section="about">About</a>
+    <a href="#services"     data-section="services">Services</a>
+    <a href="#deliverables" data-section="deliverables">Deliverables</a>
+    <a href="#testimonials" data-section="testimonials">Reviews</a>
+    <a href="#contact"      data-section="contact">Contact</a>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════ -->
+<main>
+<section id="hero" aria-label="Hero">
+  <!-- Animated Background -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: Copy -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          Creative Branding &amp; Digital Agency
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line-1">We Build</span>
+          <span class="line-2">Brands That</span>
+          <span class="line-3">Outlast Trends</span>
+        </h1>
+
+        <p class="hero-desc">
+          Strategic branding &amp; digital experiences that transform your story into a
+          powerful, memorable brand presence. From identity to web — we do it all.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#services"  class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore Services
+          </a>
+          <a href="#portfolio" class="btn btn-ghost">View Our Work</a>
+        </div>
+      </div>
+
+      <!-- Right: Visual Card -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-stack">
+          <div class="hero-card-back"></div>
+          <div class="hero-card-main">
+            <div class="hero-card-label">What We Do</div>
+            <div class="hero-card-services">
+              <div class="hero-card-service">
+                <div class="hero-card-service-icon"><i class="bi bi-palette-fill"></i></div>
+                <div class="hero-card-service-text">Brand Identity Development</div>
+              </div>
+              <div class="hero-card-service">
+                <div class="hero-card-service-icon"><i class="bi bi-building"></i></div>
+                <div class="hero-card-service-text">Corporate Branding</div>
+              </div>
+              <div class="hero-card-service">
+                <div class="hero-card-service-icon"><i class="bi bi-megaphone-fill"></i></div>
+                <div class="hero-card-service-text">Marketing & Communication</div>
+              </div>
+              <div class="hero-card-service">
+                <div class="hero-card-service-icon"><i class="bi bi-laptop-fill"></i></div>
+                <div class="hero-card-service-text">Website Design & Development</div>
+              </div>
+              <div class="hero-card-service">
+                <div class="hero-card-service-icon"><i class="bi bi-camera-video-fill"></i></div>
+                <div class="hero-card-service-text">Creative Direction</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     MARQUEE STRIP
+════════════════════════════════════════ -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- Duplicated for seamless loop -->
+    <span class="marquee-item">Brand Identity<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Corporate Branding<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Web Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Visual Direction<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Logo Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Digital Marketing<span class="marquee-dot"></span></span>
+    <span class="marquee-item">SEO Strategy<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Print Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brand Identity<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Corporate Branding<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Web Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Visual Direction<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Logo Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Digital Marketing<span class="marquee-dot"></span></span>
+    <span class="marquee-item">SEO Strategy<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Print Design<span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-inner">
+
+      <!-- Left: Visual -->
+      <div class="about-visual reveal-left">
+        <div class="about-decor" aria-hidden="true"></div>
+        <div class="about-decor-2" aria-hidden="true"></div>
+        <div class="about-img-wrap">
+          <img src="images/about-visual.jpg" alt="Creative workspace with branding materials and digital devices" class="about-img" />
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="about-content reveal-right">
+        <div class="section-tag">About PixelMint</div>
+        <h2 class="section-title" id="about-heading">
+          We Turn Stories Into<br><span>Iconic Brands</span>
+        </h2>
+        <p class="section-subtitle" style="margin-top:20px;">
+          At PixelMint, we create strategic branding and digital experiences that help businesses build credibility, visibility, and long-term brand value. We believe every business has a unique story, and our goal is to transform that story into a strong and memorable brand presence through creative design, modern technology, and impactful communication.
+        </p>
+
+        <!-- Pillars -->
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <div class="about-pillar-icon" aria-hidden="true"><i class="bi bi-bullseye"></i></div>
+            <div class="about-pillar-title">Strategic</div>
+            <div class="about-pillar-desc">Every design decision backed by brand research and positioning.</div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-icon" aria-hidden="true"><i class="bi bi-brightness-high-fill"></i></div>
+            <div class="about-pillar-title">Creative</div>
+            <div class="about-pillar-desc">Distinctive visual language that sets you apart from the crowd.</div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-icon" aria-hidden="true"><i class="bi bi-lightning-fill"></i></div>
+            <div class="about-pillar-title">Modern</div>
+            <div class="about-pillar-desc">Cutting-edge digital solutions built for today and tomorrow.</div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-icon" aria-hidden="true"><i class="bi bi-handshake"></i></div>
+            <div class="about-pillar-title">Collaborative</div>
+            <div class="about-pillar-desc">Your vision, our expertise — a true partnership from day one.</div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary" style="margin-top:32px; display:inline-flex;">
+          Start Your Brand Journey →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SERVICES SECTION
+════════════════════════════════════════ -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="section-tag">What We Offer</div>
+      <h2 class="section-title" id="services-heading">
+        Services That Drive <span>Real Results</span>
+      </h2>
+      <p class="section-subtitle">
+        Comprehensive branding and digital solutions crafted to give your business a lasting competitive edge.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- 01 — Brand Identity -->
+      <article class="service-card" aria-labelledby="svc-1">
+        <div class="service-icon" aria-hidden="true"><i class="bi bi-palette-fill"></i></div>
+        <h3 class="service-title" id="svc-1">Brand Identity Development</h3>
+        <p class="service-desc">Build a brand foundation as unique as your business with deep strategic thinking.</p>
+        <ul class="service-features" aria-label="Features">
+          <li>Brand positioning &amp; strategy</li>
+          <li>Brand tone &amp; visual direction</li>
+          <li>Colour palette selection</li>
+          <li>Typography system design</li>
+          <li>Brand usage guidelines</li>
+        </ul>
+        <div class="service-card-num" aria-hidden="true">01</div>
+      </article>
+
+      <!-- 02 — Corporate Branding -->
+      <article class="service-card" aria-labelledby="svc-2">
+        <div class="service-icon" aria-hidden="true"><i class="bi bi-building"></i></div>
+        <h3 class="service-title" id="svc-2">Corporate Branding</h3>
+        <p class="service-desc">Every touchpoint tells your brand story — from visiting cards to presentations.</p>
+        <ul class="service-features" aria-label="Features">
+          <li>Logo refinement</li>
+          <li>Visiting cards &amp; letterheads</li>
+          <li>Envelopes &amp; email signatures</li>
+          <li>Company profile / brochure</li>
+          <li>ID cards &amp; presentation templates</li>
+          <li>Brand stationery</li>
+        </ul>
+        <div class="service-card-num" aria-hidden="true">02</div>
+      </article>
+
+      <!-- 03 — Marketing & Communication -->
+      <article class="service-card" aria-labelledby="svc-3">
+        <div class="service-icon" aria-hidden="true"><i class="bi bi-megaphone-fill"></i></div>
+        <h3 class="service-title" id="svc-3">Marketing &amp; Communication</h3>
+        <p class="service-desc">Bold, on-brand marketing materials that communicate clearly and convert.</p>
+        <ul class="service-features" aria-label="Features">
+          <li>Standee &amp; banner designs</li>
+          <li>Social media branding</li>
+          <li>Promotional creatives</li>
+          <li>Corporate brochures</li>
+          <li>Business communication materials</li>
+        </ul>
+        <div class="service-card-num" aria-hidden="true">03</div>
+      </article>
+
+      <!-- 04 — Creative Direction -->
+      <article class="service-card" aria-labelledby="svc-4">
+        <div class="service-icon" aria-hidden="true"><i class="bi bi-camera-video-fill"></i></div>
+        <h3 class="service-title" id="svc-4">Creative Direction</h3>
+        <p class="service-desc">Maintain visual consistency and elevate every brand application with expert guidance.</p>
+        <ul class="service-features" aria-label="Features">
+          <li>Visual consistency guidance</li>
+          <li>Brand photography direction</li>
+          <li>Ongoing design support</li>
+          <li>Brand application guidance</li>
+        </ul>
+        <div class="service-card-num" aria-hidden="true">04</div>
+      </article>
+
+      <!-- 05 — Website Design -->
+      <article class="service-card" aria-labelledby="svc-5" style="grid-column: span 2;" >
+        <div class="service-icon" aria-hidden="true"><i class="bi bi-laptop-fill"></i></div>
+        <h3 class="service-title" id="svc-5">Website Design &amp; Development</h3>
+        <p class="service-desc">Professional, fast, and conversion-focused websites built on modern technology with a powerful admin backend.</p>
+        <ul class="service-features" aria-label="Features" style="columns: 2;">
+          <li>Responsive business website</li>
+          <li>Python / Django backend</li>
+          <li>SEO-friendly architecture</li>
+          <li>Dynamic admin panel</li>
+          <li>Performance optimised</li>
+        </ul>
+        <div class="service-card-num" aria-hidden="true">05</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     DELIVERABLES SECTION
+════════════════════════════════════════ -->
+<section id="deliverables" aria-labelledby="del-heading">
+  <div class="container">
+    <div class="deliverables-inner">
+
+      <!-- Left: Content -->
+      <div class="reveal-left">
+        <div class="section-tag">What You Get</div>
+        <h2 class="section-title" id="del-heading">
+          Everything You Need,<br><span>Nothing Left Out</span>
+        </h2>
+        <p class="section-subtitle">
+          Our packages come with everything required to launch and grow your brand — no hidden extras, no surprises.
+        </p>
+
+        <a href="#contact" class="btn btn-primary" style="margin-top:32px; display:inline-flex;">
+          Get a Free Quote →
+        </a>
+      </div>
+
+      <!-- Right: Checklist -->
+      <div class="deliverables-list reveal-right">
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">Custom UI / UX Design</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">1 Year Hosting Included</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">SSL Certificate</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">5 Official Email IDs</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">Secure Admin Dashboard</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">6 Months Tech Support</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">Print-Ready Branding Files</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">High-Res Assets</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">Brand Guideline Document</span>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="deliverable-text">Final Source Files</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS SECTION
+════════════════════════════════════════ -->
+<section id="testimonials" aria-labelledby="test-heading">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <div class="section-tag">Client Love</div>
+      <h2 class="section-title" id="test-heading">
+        Words From <span>Happy Brands</span>
+      </h2>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <article class="testimonial-card">
+        <div class="testimonial-tag">Brand Identity</div>
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-quote">
+          PixelMint completely transformed how the world sees our company. The brand identity they created is bold, memorable, and perfectly captures our ethos. We've seen a noticeable uptick in client trust since the rebrand.
+        </p>
+        <div class="testimonial-divider"></div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">AR</div>
+          <div>
+            <div class="testimonial-name">Arjun Reddy</div>
+            <div class="testimonial-role">Founder, Lumigen Technologies</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-tag">Website + Branding</div>
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-quote">
+          From the brand guidelines to the Django-powered website — the team delivered everything on time and beyond our expectations. Our website now brings in more enquiries than our entire marketing team combined.
+        </p>
+        <div class="testimonial-divider"></div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">PM</div>
+          <div>
+            <div class="testimonial-name">Priya Menon</div>
+            <div class="testimonial-role">CEO, Veda Spaces</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-tag">Corporate Branding</div>
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-quote">
+          Exceptional work, exceptional team. The branding package was comprehensive — visiting cards, brochures, email signatures, all consistent and professional. Our clients often comment on how polished our collateral looks now.
+        </p>
+        <div class="testimonial-divider"></div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">SK</div>
+          <div>
+            <div class="testimonial-name">Suresh Kumar</div>
+            <div class="testimonial-role">Director, Nova Ventures</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-inner">
+
+      <!-- Left: Info -->
+      <div class="reveal-left">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title" id="contact-heading">
+          Let's Build Something<br><span>Remarkable Together</span>
+        </h2>
+        <p class="section-subtitle">
+          Ready to elevate your brand? Drop us a message or reach out directly — we'd love to hear about your project.
+        </p>
+
+        <div class="contact-info-items">
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">hello@pixelmint.in</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value">+91 98765 43210</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Bengaluru, Karnataka, India</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form reveal-right">
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="f-name">Your Name</label>
+              <input type="text" id="f-name" class="form-input" placeholder="Raj Kumar" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-email">Email Address</label>
+              <input type="email" id="f-email" class="form-input" placeholder="raj@company.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="f-phone">Phone Number</label>
+              <input type="tel" id="f-phone" class="form-input" placeholder="+91 98765 43210" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-company">Company Name</label>
+              <input type="text" id="f-company" class="form-input" placeholder="Your Company" autocomplete="organization" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-service">Service Required</label>
+            <select id="f-service" class="form-select">
+              <option value="" disabled selected>Select a service…</option>
+              <option value="brand-identity">Brand Identity Development</option>
+              <option value="corporate">Corporate Branding</option>
+              <option value="marketing">Marketing &amp; Communication</option>
+              <option value="creative">Creative Direction</option>
+              <option value="website">Website Design &amp; Development</option>
+              <option value="full-suite">Full Brand Suite</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-budget">Project Budget</label>
+            <select id="f-budget" class="form-select">
+              <option value="" disabled selected>Select budget range…</option>
+              <option value="10k">Under ₹10,000</option>
+              <option value="10-25k">₹10,000 – ₹25,000</option>
+              <option value="25-50k">₹25,000 – ₹50,000</option>
+              <option value="50-1l">₹50,000 – ₹1,00,000</option>
+              <option value="1l+">Above ₹1,00,000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-message">Tell Us About Your Project</label>
+            <textarea id="f-message" class="form-textarea" placeholder="Describe your project, goals, and timeline…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Inquiry
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+        <div id="form-success" class="form-success" role="alert" aria-live="polite">
+          <i class="bi bi-check-circle-fill"></i> Thank you! We've received your inquiry and will be in touch within 24 hours.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="Pixelmint_Logo.png" alt="PixelMint" class="footer-logo-img"
+            onerror="this.outerHTML='<span style=\'font-family:Syne,sans-serif;font-weight:800;font-size:1.4rem;color:#F5A623;\'>PixelMint</span>'" />
+        </div>
+        <p class="footer-tagline">
+          Elevating brands digitally through strategic design, creative direction, and modern technology.
+        </p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="#" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer-social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="footer-social" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links" role="list">
+          <li><a href="#services">Brand Identity</a></li>
+          <li><a href="#services">Corporate Branding</a></li>
+          <li><a href="#services">Marketing & Comms</a></li>
+          <li><a href="#services">Creative Direction</a></li>
+          <li><a href="#services">Web Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links" role="list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links" role="list">
+          <li><a href="mailto:hello@pixelmint.in">hello@pixelmint.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="#">Bengaluru, Karnataka</a></li>
+          <li><a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © <span id="current-year"></span> <span>PixelMint</span>. All rights reserved. Elevating Brands Digitally.
+      </p>
+      <ul class="footer-bottom-links" role="list">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Back to Top ── -->
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ── JavaScript ── -->
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>
